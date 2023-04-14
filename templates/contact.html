@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% block body %}
+{% load static %}
+<body>
+   <!--header section start -->
+   <div class="header_section">
+      <div class="container">
+         <nav class="navbar navbar-dark bg-dark">
+            <a class="logo" href="/"><img src="{% static 'images/logo.png'%}"></a>
+            <div class="search_section">
+               <ul>
+                  <!-- <li><a href="#">Log In</a></li> -->
+                  <!-- <li><a href="#"><img src="{% static 'images/shopping-bag.png'%}%"></a></li> -->
+                  <!-- <li><a href="#"><img src="{% static 'images/search-icon.png'%}%"></a></li> -->
+               </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01"
+               aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample01">
+               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="/clients">Client</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="/contact">Contact Us</a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+   </div>
+   <!--header section end -->
+   <!-- contact section start -->
+   <div class="contact_section layout_padding">
+      <div class="container">
+         <h1 class="touch_taital">Contact Us</h1>
+         <div class="contact_section_2">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="email_text">
+                     <div class="form-group">
+                        <form action="https://formspree.io/f/xdojojrk" method="post">
+                        <input type="text" class="email-bt" placeholder="Name" name="Name">
+                        </div>
+                     <div class="form-group">
+                        <input type="text" class="email-bt" placeholder="Email" name="email">
+                     </div>
+                     <div class="form-group">
+                        <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment"
+                           ></textarea>
+                     </div>
+                     <div class="send_btn"><button class='send_btn' type="submit" target="_blank">Send</button></div>
+                  </div>
+               </div>
+            </form>
+               <div class="col-md-6">
+                  <div class="map_main">
+                     <div class="map-responsive">
+                        <h1>Query & FAQs</h1>
+                        <h3>any query with our website or any product we sell you can send your massage or contact on telegram without any problem</h3> 
+                        <a href=""><h1 >Telegram Contact</h1></a>  
+                        <a href=""><h1>Click Here</h1></a><br><br>
+                        <img src="{% static 'images/logo.png'%}"><br>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- contact section end -->
+   <!-- footer section start -->
+   <div class="footer_section layout_padding">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6 col-sm-12">
+               <h4 class="information_text">Trust & Quality</h4>
+               <p class="dummy_text">Get the best deals on our product, exclusively online<br>Satisfaction Guaranteed
+                  with our product</p>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+               <div class="information_main">
+                  <h4 class="information_text">Help & FAQs</h4>
+                  <p class="many_text">online transation<br>Replacement Gaurentee</p>
+               </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+               <div class="information_main">
+                  <h4 class="information_text">Contact Us</h4>
+                  <!-- <p class="call_text"><a>+01 1234567890</a></p> -->
+                  <p class="call_text"><a href="https://api.whatsapp.com/send?phone=18256054204">+01 (825) 605-4204</a>
+                  </p>
+                  <p class="call_text"><a href="mailto:intcrypt612@proton.me">intcrypt612@proton.me</a></p>
+                  <div class="social_icon">
+                     <ul>
+                        <li><a><img src="{% static 'images/fb-icon.png'%}"></a></li>
+                        <li><a><img src="{% static 'images/twitter-icon.png'%}"></a></li>
+                        <li><a><img src="{% static 'images/linkedin-icon.png'%}"></a></li>
+                        <li><a><img src="{% static 'images/instagram-icon.png'%}"></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="copyright_section">
+            <h1 class="copyright_text">
+               Copyright 2023 All Right Reserved <a href="https://www.youtube.com/@codeax"> - Youtube</a>
+         </div>
+      </div>
+   </div>
+   <!-- footer section end -->
+   {% endblock body %}

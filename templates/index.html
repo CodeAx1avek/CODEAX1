@@ -1,0 +1,339 @@
+{% extends 'base.html' %}
+{% block body %}
+{% load static %}
+<body>
+   <!--header section start -->
+   <div class="header_section">
+      <div class="container">
+         <nav class="navbar navbar-dark bg-dark">
+            <a class="logo"><img src="{% static 'images/logo.png'%}"></a>
+            <div class="search_section">
+               <ul>
+                  <!-- <li><a href="#">Log In</a></li> -->
+                  <!-- <li><a href="#"><img src="images/shopping-bag.png"></a></li> -->
+                  <!-- <li><a href="#"><img src="images/search-icon.png"></a></li> -->
+               </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01"
+               aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample01">
+               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="/clients">Clients</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="/contact">Contact Us</a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+      <!--banner section start -->
+      <div class="banner_section layout_padding">
+         <div id="my_slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="taital_main">
+                              <h4 class="banner_taital"><span class="font_size_90">70%</span> Discount on Youtube
+                                 Spotify Premium Account</h4>
+                              <p class="banner_text">We provide 100% assured working account of ott platform in cheap on
+                                 telegram </p>
+                              <div class="book_bt"><a href="#featured">Shop Now</a></div>
+                              <!-- <div class="book_bt"><a href="#">Telegram</a></div> -->
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div><img src="{% static 'images/yt-log.webp'%}" class="image_1"></div>
+                        </div>
+                     </div>
+                     <div class="button_main"></button><input type="text" class="Enter_text" disabled placeholder=""
+                           name=""></div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="taital_main">
+                              <h4 class="banner_taital"><span class="font_size_90">60%</span> Discount Online Courses of
+                                 UDEMY</h4>
+                              <p class="banner_text">We have variety of udemy paid courses in cheap only on telegram
+                                 100% safe and trust</p>
+                              <div class="book_bt"><a href="#featured">Shop Now</a></div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div><img src=" {% static 'images/udemy.png' %}" class="image_1"></div>
+                        </div>
+                     </div>
+                     <div class="button_main"></button><input type="text" class="Enter_text" disabled placeholder=""
+                           name=""></div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
+                  <i class=""><img src="{% static 'images/left-icon.png' %}"></i>
+               </a>
+               <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
+                  <i class=""><img src="{% static 'images/right-icon.png' %}"></i>
+               </a>
+            </div>
+         </div>
+         <!--banner section end -->
+      </div>
+      <!--header section end -->
+      <!--category section start -->
+
+      <div class="container">
+         <div class="category_section">
+            <div class="row">
+               <div class="col-lg-2 col-sm-12">
+                  <h1 class="category_text" id="featured">Category</h1>
+               </div>
+               <div class="col-lg-10 col-sm-12 main">
+                  <div class="col">
+                     <div class="box_main">
+                        <div><a class="icon_1" href="#course"></a></div>
+                        <h4><a class="fashion_text" href="#course">Paid Courses</a></h4>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="box_main">
+                        <div><a class="icon_2" href="#premium"></a></div>
+                        <h4><a class="fashion_text" href="#premium">premium Accounts</a></h4>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="box_main">
+                        <div><a href='#gift' class="icon_3"></a></div>
+                        <h4><a class="fashion_text" href="#gift">Gift Cards</a></h4>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="box_main">
+                        <div><a class="icon_4" href="#script"></a></div>
+                        <h4><a class="fashion_text" href="#script">Freelancing</a></h4>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="box_main">
+                        <div><a href='#' class="icon_5"></a></div>
+                        <h4><a class="fashion_text" href="">Telegram</a></h4>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="category_section_2" id="course">
+            <div class="row">
+               <div class="col-lg-4 col-sm-12">
+                  <div class="beds_section active">
+                     <h1 class="bed_text">Up to 50% off Udemy | Courses</h1>
+                     <div><img src="{% static 'images/java.jpg'%}" class="image_2"></div>
+                     <div class="seemore_bt"><a href="https://t.me/+DzEdRkAp3Kc5MDg1" target='_blank'>Telegram</a></div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-12">
+                  <div class="beds_section active">
+                     <h1 class="bed_text">Courses Available in Cheap </h1>
+                     <div><img src="{% static 'images/webdev.jpg' %}" class="image_2"></div>
+                     <div class="seemore_bt"><a href="https://t.me/+DzEdRkAp3Kc5MDg1" target='_blank'>Telegram</a></div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-12">
+                  <div class="beds_section active">
+                     <h1 class="bed_text">Sell Method Voucher and Giftcard</h1>
+                     <div><img src="{% static 'images/php-img.jpg' %}" class="image_2"></div>
+                     <div class="seemore_bt"><a href="https://t.me/+DzEdRkAp3Kc5MDg1" target='_blank'>Telegram</a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- category section end -->
+      <!-- beauty product section start -->
+      <div class="beauty_section layout_padding">
+         <div class="container" id="premium">
+            <div class="row">
+               <div class="col-lg-4 col-sm-12">
+                  <div class="beauty_box">
+                     <h1 class="bed_text">OTT Platform Account Selling</h1>
+                     <div><img src="{% static 'images/img-5.jpg' %}" class="image_3"></div>
+                     <div class="seemore_bt"><a href="https://t.me/+DzEdRkAp3Kc5MDg1" target='_blank'>Telegram</a></div>
+                  </div>
+               </div>
+               <div class="col-lg-8 col-sm-12">
+                  <div class="beauty_box_1">
+                     <h1 class="bed_text_1">
+                        <Explore></Explore>buy premium account in Cheap
+                     </h1>
+                     <div><img src="{% static 'images/spotify.jpg' %}" class="image_3"></div>
+                     <div class="seemore_bt"><a href="https://t.me/+DzEdRkAp3Kc5MDg1" target='_blank'>Telegram</a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- beauty product section end -->
+      <!-- product section start -->
+      <div class="product_section layout_padding">
+         <div class="container" id="gift">
+            <h1 class="feature_taital">Gift Card & Voucher</h1>
+            <p class="feature_text">buy giftcard and voucher in cheap</p>
+            <div class="product_section_2">
+               <div class="row">
+                  <div class="col-sm-5">
+                     <div class="feature_box">
+                        <h1 class="readable_text">Udemy Voucher available</h1>
+                        <div><img src="{% static 'images/udemy-coupon.png' %}" class="image_7"></div>
+                        <div class="seemore_bt"><a href="https://t.me/+DzEdRkAp3Kc5MDg1" target='_blank'>Telegram</a>
+                        </div>
+                     </div>
+                     <div class="feature_box_1">
+                        <h1 class="readable_text">Try hack me Vouche</h1>
+                        <div><img src="{% static 'images/gc.jpg' %}" class="image_7"></div>
+                        <div class="seemore_bt"><a href="https://t.me/+DzEdRkAp3Kc5MDg1" target='_blank'>Telegram</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-7">
+                     <div class="feature_box_2">
+                        <h1 class="readable_text">Domino's Gift card</h1>
+                        <div><img src="{% static 'images/img-8.png' %}" class="image_8"></div>
+                        <div class="seemore_bt"><a href="https://t.me/+DzEdRkAp3Kc5MDg1" target='_blank'>Telegram</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- product section end -->
+      <!-- client section start -->
+      <div class="client_section layout_padding" id="script">
+         <div id="main_slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <h1 class="feature_taital">Freelancing Project</h1>
+                     <p class="feature_text">We freelance on such project like Web Devlopment,Scripting,Automation,Web
+                        Scraping etc.</p>
+                     <div class="client_section_2">
+                        <!-- <div class="image_9"><img src="images/sk(1).png"></div> -->
+                        <h3 class="nolmal_text">Web Scraping</h3>
+                        <p class="ipsum_text">Web scraping scripts: Python is a popular language for web scraping, which
+                           is the process of automatically extracting data from websites. You can create a script that
+                           can scrape specific data from a website and save it to a file or database.</p>
+
+                        <div class="image_9"><img src="{% static 'images/icon-10.png' %}"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <h1 class="feature_taital">Freelancing project</h1>
+                     <p class="feature_text">We freelance on such project like Web Devlopment,Scripting,Automation,Web
+                        Scraping etc.</p>
+                     <div class="client_section_2">
+                        <!-- <div class="image_9"><img src="images/sk(1).png"></div> -->
+                        <h3 class="nolmal_text">Web Automation</h3>
+                        <p class="ipsum_text">Automation scripts: Python can be used to automate repetitive tasks, such
+                           as sending emails or updating databases. You can create a script that can automate a task for
+                           a customer, saving them time and effort.</p>
+                        <div class="image_9"><img src="{% static 'images/icon-10.png' %}"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <h1 class="feature_taital">Freelancing Project</h1>
+                     <p class="feature_text">We freelance on such project like Web Devlopment,Scripting,Automation,Web
+                        Scraping etc.</p>
+
+                     <div class="client_section_2">
+                        <!-- <div class="image_9"><img src="images/sk(1).png"></div> -->
+                        <h3 class="nolmal_text">Web Devlopment</h3>
+                        <p class="ipsum_text">Python is a powerful and versatile programming language that is widely
+                           used for web development. In this blog post, we'll explore how Python can be used for web
+                           development and the benefits it offers over other languages.</p>
+                        <div class="image_9"><img src="{% static 'images/icon-10.png' %}"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+               <i class=""><img src="{% static 'images/left-icon.png' %}"></i>
+            </a>
+            <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+               <i class=""><img src="{% static 'images/right-icon.png' %}"></i>
+            </a>
+         </div>
+      </div>
+
+
+
+
+
+
+      <!-- client section end -->
+      <!-- newsletter section start -->
+      <!-- <div class="newsletter_section layout_padding"> -->
+      <div class="container">
+         <!-- <h6 class="conect_text">   </h6> -->
+         <div class="feature_box_3">
+            <h1 class="category_text">Github Page</h1>
+            <div><a href="https://github.com/codeax1avek" target=" _blank"<img src="{% static 'images/github.png' %}"
+                  class="image_7"></a></div>
+            <div class="seemore_bt"><a href="#">go up</a></div>
+         </div>
+      </div>
+   </div>
+   </div>
+   <!-- newsletter section end -->
+   <!-- footer section start -->
+   <div class="footer_section layout_padding">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6 col-sm-12">
+               <h4 class="information_text">Trust & Quality</h4>
+               <p class="dummy_text">Get the best deals on our product, exclusively online<br>Satisfaction Guaranteed
+                  with our product</p>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+               <div class="information_main">
+                  <h4 class="information_text">Help & FAQs</h4>
+                  <p class="many_text">online transation<br>Replacement Gaurentee</p>
+               </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+               <div class="information_main">
+                  <h4 class="information_text">Contact Us</h4>
+                  <p class="call_text"><a href="https://api.whatsapp.com/send?phone=18256054204">+01 (825) 605-4204</a>
+                  </p>
+                  <p class="call_text"><a href="mailto:intcrypt612@proton.me">intcrypt612@proton.me</a></p>
+                  <div class="social_icon">
+                     <ul>
+                        <li><a><img src="{% static 'images/fb-icon.png' %}"></a></li>
+                        <li><a><img src="{% static 'images/twitter-icon.png' %}"></a></li>
+                        <li><a><img src="{% static 'images/linkedin-icon.png' %}"></a></li>
+                        <li><a><img src="{% static 'images/instagram-icon.png' %}"></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="copyright_section">
+            <h1 class="copyright_text">
+               Copyright 2023 All Right Reserved <a href="https://www.youtube.com/@codeax"> - Youtube</a>
+         </div>
+      </div>
+   </div>
+   <!-- footer section end -->
+   {% endblock body %}

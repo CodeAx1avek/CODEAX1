@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% block body %}
+{% load static %}
+   <body>
+      <!--header section start -->
+      <div class="header_section">
+         <div class="container">
+            <nav class="navbar navbar-dark bg-dark">
+               <a class="logo"><img src="{% static 'images/logo.png'%}"></a>
+               <div class="search_section">
+                  <ul>
+                     <!-- <li><a href="#">Log In</a></li> -->
+                     <!-- <li><a href="#"><img src="{% static 'images/shopping-bag.png'%}"></a></li> -->
+                     <!-- <li><a href="#"><img src="{% static 'images/search-icon.png'%}"></a></li> -->
+                  </ul>
+               </div>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarsExample01">
+                  <ul class="navbar-nav mr-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="/">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="/clients">Client</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact Us</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <!--header section end -->
+      <!-- client section start -->
+      <div class="client_section layout_padding">
+         <div id="main_slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <h1 class="feature_taital">what is says our customer</h1>
+                     <p class="feature_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking</p>
+                     <div class="client_section_2">
+                        <div class="image_9"><img src="{% static 'images/img-9.png'%}"></div>
+                        <h3 class="nolmal_text">Normal distribution</h3>
+                        <p class="ipsum_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look</p>
+                        <div class="image_9"><img src="{% static 'images/icon-10.png'%}"></div>
+                     </div>
+                  </div>
+               </div>
+          
+               <div class="carousel-item">
+                  <div class="container">
+                     <h1 class="feature_taital">FEATURED PRODUCTS</h1>
+                     <p class="feature_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking</p>
+                     <div class="client_section_2">
+                        <div class="image_9"><img src="{% static 'images/img-9.png'%}"></div>
+                        <h3 class="nolmal_text">Normal distribution</h3>
+                        <p class="ipsum_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look</p>
+                        <div class="image_9"><img src="{% static 'images/icon-10.png'%}"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+            <i class=""><img src="{% static 'images/left-icon.png'%}"></i>
+            </a>
+            <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+            <i class=""><img src="{% static 'images/right-icon.png'%}"></i>
+            </a>
+         </div>
+      </div>
+      <!-- client section end -->
+    <!-- footer section start -->
+    <div class="footer_section layout_padding">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6 col-sm-12">
+               <h4 class="information_text">Trust & Quality</h4>
+               <p class="dummy_text">Get the best deals on our product, exclusively online<br>Satisfaction Guaranteed with our product</p>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+               <div class="information_main">
+                  <h4 class="information_text">Help & FAQs</h4>
+                  <p class="many_text">online transation<br>Replacement Gaurentee</p>
+               </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+               <div class="information_main">
+                  <h4 class="information_text">Contact Us</h4>
+                  <!-- <p class="call_text"><a>+01 1234567890</a></p> -->
+                  <p class="call_text"><a href="https://api.whatsapp.com/send?phone=18256054204">+01 (825) 605-4204</a></p>
+                  <p class="call_text"><a href="mailto:intcrypt612@proton.me">intcrypt612@proton.me</a></p>
+                  <div class="social_icon">
+                     <ul>
+                        <li><a><img src="{% static 'images/fb-icon.png'%}"></a></li>
+                        <li><a><img src="{% static 'images/twitter-icon.png'%}"></a></li>
+                        <li><a><img src="{% static 'images/linkedin-icon.png'%}"></a></li>
+                        <li><a><img src="{% static 'images/instagram-icon.png'%}"></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="copyright_section">
+            <h1 class="copyright_text">
+            Copyright 2023 All Right Reserved <a href="https://www.youtube.com/@codeax"> - Youtube</a>
+         </div>
+      </div>
+   </div>
+{% endblock body %}
